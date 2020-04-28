@@ -1,0 +1,21 @@
+###端口设置
+server:
+  port: 8081
+### 装配属性
+person:
+  lastName: liuxixi
+  age: 18
+  boss: true
+  birth: 2017/03/19
+###日志设置
+logging:
+  level:
+    com:
+      lxx: trace
+###国际化  模板缓存
+spring:
+  messages:
+    basename: i18n.login
+    fallback-to-system-locale: false
+  thymeleaf:
+    cache: false
