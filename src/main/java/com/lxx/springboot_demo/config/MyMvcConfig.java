@@ -18,11 +18,11 @@ public class MyMvcConfig implements WebMvcConfigurer {
         registry.addViewController("/main.html").setViewName("dashboard");
     }
 
-    @Override
+   /* @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**")
                 .excludePathPatterns("/index.html", "/", "/user/login","/asserts/**","/favicon.ico","/webjars/**");
-    }
+    }*/
 
     @Bean
     public LocaleResolver localeResolver() {
